@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="Manga & Illustration Portfolio" />
+  <title>ARTIST NAME — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="site-config.js" defer></script>
+  <script src="works-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="brand" id="brand">ARTIST NAME</a>
+    <nav aria-label="メインメニュー">
+      <a id="nav-works" href="#works">WORKS</a><a id="nav-about" href="#about">ABOUT</a><a id="nav-contact" href="#contact">CONTACT</a>
+    </nav>
+  </header>
+  <main id="top">
+    <section id="works" class="book-section" aria-label="作品集">
+      <div class="book-heading"><span class="kicker" id="book-kicker">MANGA / ILLUSTRATION</span></div>
+      <div class="desktop-book" id="desktop-book">
+        <div class="book-surface" aria-live="polite">
+          <div class="paper paper-left" id="left-page"></div>
+          <div class="paper paper-right" id="right-page"></div>
+          <div class="flip-sheet" id="flip-sheet" aria-hidden="true"><div class="sheet-front" id="flip-front"></div><div class="sheet-back" id="flip-back"></div></div>
+          <div class="book-seam"></div>
+        </div>
+        <div class="book-controls">
+          <button class="page-btn" id="next-btn" type="button" aria-label="次の見開きへ">← NEXT</button>
+          <span class="page-counter" id="page-counter">01 / 01</span>
+          <button class="page-btn" id="prev-btn" type="button" aria-label="前の見開きへ">PREV →</button>
+        </div>
+      </div>
+      <div class="mobile-comic" id="mobile-comic" aria-label="縦読み作品一覧"></div>
+    </section>
+    <section class="info-section" id="about"><div class="info-heading"><span id="about-kicker">01</span><h2><span id="about-title">ABOUT</span></h2></div><div class="info-content"><p id="introduction"></p></div></section>
+    <section class="info-section" id="contact"><div class="info-heading"><span id="contact-kicker">02</span><h2><span id="contact-title">CONTACT</span></h2></div><div class="info-content"><p id="contact-intro">お問い合わせ・SNS</p><div id="social-links" class="social-links"></div></div></section>
+  </main>
+  <footer><span id="footer-name">ARTIST NAME</span></footer>
+  <dialog id="art-dialog" aria-label="作品詳細"><button class="dialog-close" id="dialog-close" aria-label="閉じる">×</button><img id="dialog-image" alt="" /><div class="dialog-caption"><strong id="dialog-title"></strong><span id="dialog-description"></span></div></dialog>
+</body>
+</html>

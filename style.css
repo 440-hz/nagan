@@ -1,0 +1,232 @@
+:root{font-family:Arial,'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;background:#111;color:#eee;font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px}a{color:inherit}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #fae96a;outline-offset:4px}.site-header{max-width:1340px;padding:25px 28px 15px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:clamp(17px,2vw,25px);font-weight:900;letter-spacing:-.06em;text-decoration:none}.brand-dot,.period{color:#e7e7e7}.site-header nav{display:flex;gap:clamp(12px,2.6vw,35px);font-size:10px;font-weight:650;letter-spacing:.18em}.site-header nav a{text-decoration:none}.site-header nav a:hover{text-decoration:underline}.top-label{max-width:1340px;margin:8px auto 0;padding:9px 28px;display:flex;justify-content:space-between;border-top:1px solid #555;color:#999;font-size:10px;letter-spacing:.16em}.book-section{max-width:1280px;margin:0 auto;padding:35px 20px 80px;scroll-margin-top:20px}.book-heading{text-align:center;margin-bottom:18px}.kicker{font-size:11px;letter-spacing:.3em;color:#b7b7b7}.book-heading h1{font-size:clamp(40px,6vw,86px);line-height:1;margin:11px 0 0;font-weight:950;letter-spacing:-.07em}.book-heading em{font-style:normal;-webkit-text-stroke:1px #fff;color:transparent}.desktop-book{max-width:1080px;margin:auto}.book-surface{position:relative;display:grid;grid-template-columns:1fr 1fr;aspect-ratio:1.68;perspective:1700px;filter:drop-shadow(0 20px 25px #000a);isolation:isolate}.paper{background:radial-gradient(circle at 88% 9%,#88888855 .85px,transparent 1.3px) 0 0/9px 9px,#d8d8d3;color:#111;min-width:0;overflow:hidden;position:relative;padding:clamp(13px,2.1vw,30px);box-shadow:inset 0 0 20px #0001}.paper-left{box-shadow:inset -18px 0 25px #0002}.paper-right{box-shadow:inset 18px 0 25px #0002}.book-seam{pointer-events:none;position:absolute;z-index:6;top:0;bottom:0;left:50%;width:4px;transform:translateX(-50%);background:linear-gradient(90deg,#0005,#fff3,#0005)}.page-layout{background:#d8d8d3ec;height:100%;display:flex;flex-direction:column;gap:10px}.page-meta{display:flex;justify-content:space-between;gap:8px;border-bottom:2px solid #222;padding-bottom:7px;font-size:clamp(7px,.8vw,10px);letter-spacing:.1em;font-weight:800}.work-grid{flex:1;min-height:0;display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:8px}.work-tile{position:relative;display:block;min-width:0;min-height:0;border:2px solid #111;background:#c9c9c4;overflow:hidden;padding:0;cursor:zoom-in}.work-tile:first-child{grid-row:span 2}.work-tile img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1);transition:filter .25s,transform .25s}.work-tile:hover img{filter:grayscale(0);transform:scale(1.035)}.page-bottom{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.1em;font-weight:bold}.page-statement{display:flex;flex:1;flex-direction:column;justify-content:space-between;gap:10px}.page-statement h2{font-size:clamp(22px,4.3vw,64px);line-height:1.02;letter-spacing:-.07em;margin:0;font-weight:950}.statement-inner{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;flex:1;min-height:0}.statement-inner .work-tile:first-child{grid-row:auto}.statement-aside{background:radial-gradient(circle,#555 1px,transparent 1.25px) 0 0/7px 7px;display:flex;align-items:center;justify-content:center}.statement-aside span{background:#f0d75c;border:2px solid #111;border-radius:45% 45% 45% 8%;padding:10px;font-size:clamp(9px,1vw,14px);font-weight:900;transform:rotate(-9deg)}.flip-sheet{position:absolute;z-index:5;top:0;left:0;width:50%;height:100%;transform-origin:right center;transform-style:preserve-3d;pointer-events:none;visibility:hidden}.flip-sheet.active{visibility:visible}.sheet-front,.sheet-back{position:absolute;inset:0;overflow:hidden;padding:clamp(13px,2.1vw,30px);backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#d8d8d3;color:#111}.sheet-back{transform:rotateY(180deg);box-shadow:inset 18px 0 25px #0002}.flip-sheet.forward{animation:flipForward .65s ease-in-out both}.flip-sheet.backward{animation:flipBackward .65s ease-in-out both}@keyframes flipForward{from{transform:rotateY(0)}to{transform:rotateY(180deg)}}@keyframes flipBackward{from{transform:rotateY(180deg)}to{transform:rotateY(0)}}.book-controls{display:flex;align-items:center;justify-content:space-between;margin-top:18px}.page-btn{padding:11px 19px;background:none;border:1px solid #777;color:white;cursor:pointer;font-weight:800;font-size:12px}.page-btn:hover:not(:disabled){background:#f0d75c;color:#111}.page-btn:disabled{opacity:.3;cursor:default}.page-counter,.hint{color:#aaa;font-size:11px}.hint{text-align:center;margin:15px 0 0}.mobile-comic{display:none}.info-section{max-width:1080px;margin:0 auto 75px;padding:28px 20px 0;border-top:1px solid #777;display:grid;grid-template-columns:1fr 1.2fr;gap:28px;scroll-margin-top:20px}.info-heading>span{color:#aaa;font-size:11px;letter-spacing:.2em}.info-heading h2{font-size:clamp(40px,6vw,80px);letter-spacing:-.06em;margin:4px 0}.info-content{position:relative;min-height:150px;font-size:15px;line-height:1.9}.bubble{display:inline-block;background:#f0d75c;color:#111;border-radius:45% 45% 45% 10%;padding:7px 18px;transform:rotate(-7deg);font-size:12px;font-weight:900}.halftone{height:40px;margin-top:26px;background:radial-gradient(circle,#888 1px,transparent 1.5px) 0 0/9px 9px;mask-image:linear-gradient(90deg,#000,transparent)}.social-links{display:flex;gap:12px;flex-wrap:wrap}.social-links a{border:1px solid #888;padding:10px 16px;text-decoration:none;font-size:12px;font-weight:bold}.social-links a:hover{background:#fff;color:#111}.empty-contact{color:#aaa;font-size:13px}footer{max-width:1340px;margin:auto;border-top:1px solid #555;padding:22px 28px 45px;display:flex;justify-content:space-between;font-size:12px;font-weight:800}dialog{border:0;width:max-content;max-width:97vw;max-height:97vh;background:#d8d8d3;color:#111;padding:18px;box-shadow:0 12px 65px #000b}dialog::backdrop{background:#000d}dialog img{max-width:calc(97vw - 24px);max-height:86vh;object-fit:contain;display:block;margin:auto}.dialog-close{position:absolute;top:5px;right:6px;width:36px;height:36px;background:#111;color:#fff;border:0;cursor:pointer;font-size:25px}.dialog-caption{display:flex;gap:12px;flex-wrap:wrap;padding-top:14px;font-size:13px}#dialog-description{color:#666}@media(max-width:700px){.site-header{padding:18px 16px 10px;align-items:flex-start}.site-header nav{gap:12px;font-size:10px}.top-label{margin:4px 16px;padding:8px 0;font-size:8px}.book-section{padding:32px 14px 45px}.book-heading{text-align:left;margin:0 0 22px}.book-heading h1{font-size:clamp(35px,10vw,65px)}.desktop-book{display:none}.mobile-comic{display:block}.comic-page{background:#d8d8d3;color:#111;padding:15px 13px;margin-bottom:22px;border:1px solid #666;box-shadow:8px 8px 0 #2a2a2a}.comic-meta{font-size:10px;font-weight:900;letter-spacing:.15em;border-bottom:3px solid #111;padding:0 0 8px;margin-bottom:13px}.comic-panel{display:block;width:100%;padding:0;border:3px solid #111;background:white;position:relative;margin-bottom:14px;cursor:zoom-in}.comic-panel img{width:100%;display:block;max-height:75vh;object-fit:contain;background:#ddd}.comic-caption{font-size:11px;font-weight:900;text-align:right;padding:0 0 2px}.comic-page:nth-child(even) .comic-panel{width:87%;margin-left:auto}.comic-page:nth-child(3n) .comic-panel{width:91%;margin-left:0}.mobile-bubble{display:inline-block;border:2px solid #111;border-radius:50% 50% 50% 9%;font-size:12px;font-weight:900;padding:8px 18px;margin-bottom:12px;transform:rotate(-6deg);background:#f0d75c}.info-section{display:block;margin:0 14px 50px;padding:18px 0 0}.info-heading h2{font-size:52px}.info-content{margin-top:12px}.hint{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* v0.3: 色・文字の微調整はここから */
+:root { --paper-color:#d8d8d3; --accent-yellow:#f0d75c; }
+/* 画像に重ならない漫画トーンをページの余白・区切りに表示 */
+.paper{background:var(--paper-color)}
+.page-layout{position:relative;background:transparent;z-index:1}
+.paper:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background:radial-gradient(circle,#333 0.7px,transparent 1px) 0 0/7px 7px;mask-image:linear-gradient(125deg,#000,transparent 27%,transparent 70%,#000);}
+.page-meta{background:var(--paper-color);position:relative;z-index:1}
+.page-bottom{position:relative;z-index:1}
+/* 作品は装飾より前面に出す */
+.work-tile{z-index:1}
+/* 開いた作品の余白を小さく、画面内で可能な限り大きく */
+dialog{padding:10px;border-radius:2px;overflow:auto}
+dialog img{width:auto;height:auto;max-width:calc(97vw - 20px);max-height:86dvh}
+.dialog-caption{padding:8px 4px 2px}
+/* 黄色は差し色のみ */
+.page-btn:focus-visible,.work-tile:focus-visible{outline-color:var(--accent-yellow)}
+.info-heading>span{color:var(--accent-yellow)}
+
+/* v0.4: 漫画雑誌の見出し・黄色のアクセント */
+.book-heading .kicker{color:var(--accent-yellow)}
+.paper-right .page-meta,.sheet-front .page-meta:has(+ .page-statement){color:var(--accent-yellow)}
+.info-heading h2{font-size:clamp(28px,3.6vw,49px);letter-spacing:.13em;font-weight:750;line-height:1.22;margin:12px 0}
+.page-statement h2{font-size:clamp(27px,4vw,56px);letter-spacing:.12em;font-weight:850}
+/* モーダル画像を元のピクセル寸法に縛らず、画面の表示領域まで拡大する */
+dialog#art-dialog{width:96vw;max-width:1500px;height:94dvh;max-height:1000px;padding:18px 20px 12px;overflow:hidden;box-sizing:border-box}
+dialog#art-dialog img{display:block;width:100%;height:calc(100% - 55px);max-width:none;max-height:none;object-fit:contain;object-position:center;margin:0 auto}
+dialog#art-dialog .dialog-caption{height:55px;align-items:center;overflow:auto;padding:8px 2px 0}
+dialog#art-dialog .dialog-close{z-index:10;top:8px;right:8px;width:43px;height:43px;border:2px solid var(--accent-yellow)}
+@media(max-width:700px){.info-heading h2{font-size:clamp(28px,8vw,42px);letter-spacing:.12em}dialog#art-dialog{width:98vw;height:94dvh;padding:12px 10px 8px}}
+
+/* v0.5: 漫画内のジャンル表記は黒、見出し上のジャンル表記だけ黄色 */
+.paper-right .page-meta, .paper-left .page-meta, .sheet-front .page-meta, .sheet-back .page-meta { color:#151515; }
+/* 尾のある漫画の吹き出し。既存ラベルは変えず形だけ変更 */
+.statement-aside span,.bubble,.mobile-bubble{position:relative;isolation:isolate;border-radius:48% 51% 44% 52%;transform:rotate(-5deg);background:var(--accent-yellow);border:2px solid #111;box-shadow:2px 3px 0 #1112;}
+.statement-aside span:after,.bubble:after,.mobile-bubble:after{content:"";position:absolute;width:16px;height:15px;background:var(--accent-yellow);border-right:2px solid #111;border-bottom:2px solid #111;bottom:-8px;left:23%;transform:skew(-25deg) rotate(24deg);z-index:-1;}
+/* キャプションを指定した作品のみ、画像の隣に配置 */
+.work-tile.has-side-caption{display:flex;flex-direction:row;align-items:stretch;}
+.work-tile.has-side-caption img{width:70%;height:100%;min-width:0;flex:1 1 70%;object-fit:cover;}
+.tile-side-caption{flex:0 0 30%;padding:clamp(5px,1vw,12px) clamp(4px,.8vw,10px);font-size:clamp(8px,.85vw,12px);font-weight:600;letter-spacing:.045em;line-height:1.6;text-align:left;overflow-wrap:anywhere;background:#e2e2dc;color:#222;display:flex;align-items:center;white-space:pre-line;}
+.comic-work-caption{font-size:12px;line-height:1.7;margin:0 0 8px;color:#222;white-space:pre-line;}
+@media(max-width:700px){.comic-panel{display:block}.comic-panel img{width:100%}.tile-side-caption{display:none}.mobile-bubble:after{bottom:-7px}}
+
+/* v0.6 — すべての吹き出しをいったん撤去。キャプションは独立領域へ */
+.statement-aside{padding:clamp(10px,2vw,30px);align-items:center;justify-content:center;}
+.statement-caption{max-width:26ch;white-space:pre-line;overflow-wrap:anywhere;font-size:clamp(12px,1.25vw,17px);font-weight:650;line-height:1.85;letter-spacing:.045em;background:#d8d8d3ec;color:#151515;padding:clamp(10px,1.5vw,24px);margin:0;}
+.empty-note{font-size:clamp(11px,1vw,15px);font-weight:750;letter-spacing:.08em;background:#d8d8d3de;padding:10px 14px;text-align:center;}
+/* 旧吹き出しクラスは利用していない。描画上の吹き出しはゼロ。 */
+
+/* v0.7 — 大見出しの近くにスクリーントーンを移動。小見出しは番号のみ。 */
+.info-heading{min-width:0}
+.info-heading>span{display:inline-flex;align-items:center;gap:12px;color:var(--accent-yellow);font-weight:750;letter-spacing:.2em}
+.info-heading>span::after{content:"";display:block;width:44px;height:1px;background:var(--accent-yellow);opacity:.85}
+.info-heading h2{display:flex;align-items:center;gap:clamp(12px,2vw,28px);max-width:100%}
+.info-heading h2::after{content:"";display:block;flex:1;min-width:30px;height:45px;background:radial-gradient(circle,#bbb 1px,transparent 1.5px) 0 0/9px 9px;mask-image:linear-gradient(90deg,#000 10%,transparent 100%);pointer-events:none;opacity:.78}
+.info-content .halftone{display:none}
+footer{justify-content:flex-start}
+@media(max-width:700px){.info-heading h2::after{height:33px}}
+
+/* v0.8 — 見出しとトーンを重ねる。ABOUT=右上 / CONTACT=左下。斜めの形は使用しない */
+.info-heading h2{
+  position:relative;display:block;isolation:isolate;
+  width:fit-content;max-width:100%;
+  margin:12px 0 30px;padding:12px 14px 14px 0;
+}
+.info-heading h2::after{display:none}
+.info-heading h2 span{position:relative;z-index:1;display:block;text-shadow:0 1px 1px #111}
+.info-heading h2::before{
+  content:"";position:absolute;pointer-events:none;z-index:0;
+  background-image:radial-gradient(circle,#b3b3b3 0.85px,transparent 1.25px);
+  background-size:7px 7px;opacity:.75;
+}
+/* ABOUT: 文字の後半に入り込む、右上の矩形 */
+#about .info-heading h2::before{
+  left:35%;top:0;width:86%;height:75%;
+  -webkit-mask-image:linear-gradient(to right,#000 18%,transparent 100%);
+  mask-image:linear-gradient(to right,#000 18%,transparent 100%);
+}
+/* CONTACT: 文字の前半に重なる、左下の矩形 */
+#contact .info-heading h2::before{
+  left:-3%;bottom:0;width:67%;height:60%;
+  -webkit-mask-image:linear-gradient(to right,#000 0%,transparent 100%);
+  mask-image:linear-gradient(to right,#000 0%,transparent 100%);
+}
+@media(max-width:700px){
+ .info-heading h2{margin-bottom:20px;padding-top:10px;padding-bottom:12px}
+ #about .info-heading h2::before{width:74%;height:70%}
+ #contact .info-heading h2::before{width:65%;height:58%}
+}
+
+/* v0.9 — いただいたPNG素材による吹き出し */
+.work-status{position:relative;display:inline-grid;place-items:center;width:clamp(125px,15vw,178px);height:165px;margin-top:8px;isolation:isolate}
+.work-status[hidden]{display:none}
+.work-status img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:-1}
+.work-status span{max-width:88%;text-align:center;font-size:clamp(11px,1.1vw,14px);font-weight:900;color:#111;line-height:1.35;letter-spacing:.02em}
+.last-page-grid{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.last-page-grid .work-tile:first-child{grid-row:auto}
+.last-page-grid .ending-panel{grid-column:span 2}
+.ending-panel{position:relative;min-width:0;min-height:0;overflow:hidden;background:#d6d6d1;border:2px solid #111;isolation:isolate}
+.ending-illustration{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1)}
+.ending-bubble{position:absolute;top:5%;right:6%;width:clamp(78px,12vw,140px);aspect-ratio:512/437;display:grid;place-items:center;isolation:isolate;pointer-events:none}
+.ending-bubble img{width:100%;height:100%;position:absolute;inset:0;z-index:-1;filter:none}
+.ending-bubble span{color:#111;background:#e6e6e0cc;font-size:clamp(12px,1.55vw,20px);font-weight:900;letter-spacing:.05em;padding:1px 4px}
+.mobile-ending{height:300px;padding:15px}
+.mobile-ending .ending-panel{height:100%}
+.mobile-ending .ending-bubble{width:140px}
+@media(max-width:700px){.work-status{width:140px;height:145px}.ending-bubble span{font-size:20px}}
+
+/* v1.0: 文字入りPNGをそのまま表示。余分なHTML文字はなし */
+.ending-bubble{width:clamp(115px,17vw,205px);aspect-ratio:800/523;z-index:2}
+.ending-bubble img{display:block;object-fit:contain}
+.mobile-ending .ending-bubble{width:clamp(130px,44vw,190px)}
+
+/* v1.1 — WORK 02がはみ出さず、1つだけ表示されるよう高さを配分 */
+.page-statement{min-height:0;overflow:hidden;justify-content:initial;display:flex;flex-direction:column;gap:clamp(5px,.75vw,10px)}
+.page-statement > h2{flex:0 0 auto;margin:0}
+.page-statement > .statement-inner{flex:1 1 0;min-height:0;overflow:hidden}
+.page-statement > .statement-secondary-work{flex:0 0 24%;height:24%;max-height:24%;min-height:0;width:100%;grid-row:auto}
+.page-statement > .statement-secondary-work img{width:100%;height:100%;object-fit:cover}
+/* ending panel has its own slot within the left page grid */
+.last-page-grid{min-height:0;overflow:hidden}
+.last-page-grid > .ending-panel{min-height:0}
+@media(max-width:900px) and (min-width:701px){.page-statement{gap:5px}.page-statement > .statement-secondary-work{flex-basis:20%;height:20%;max-height:20%}}
+
+/* v1.2 — 最初の右ページはWORK 01を大きく表示、WORK 02以降を左ページから順に配置 */
+.page-statement .statement-inner {flex:1;min-height:0;}
+
+
+/* v1.3 — 最終ページ専用の安定したコマ割り。
+   上段にWORK 06、下段に「つづく」。作品数が増えた場合もコマ同士を重ねない。 */
+.last-page-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:minmax(0, 1.25fr) minmax(0, .75fr);
+  gap:clamp(5px,.7vw,8px);
+  min-height:0;
+  overflow:hidden;
+}
+.last-page-grid > .work-tile,
+.last-page-grid > .ending-panel{
+  grid-column:1 !important;
+  grid-row:auto !important;
+  min-width:0;
+  min-height:0;
+  width:100%;
+  height:100%;
+}
+.last-page-grid > .work-tile:nth-child(n+2):not(:last-child){display:none;}
+.last-page-grid .ending-illustration{object-fit:contain;background:#d8d8d3;}
+.last-page-grid .ending-bubble{
+  top:5%;right:5%;
+  width:clamp(55px,7vw,93px);
+  height:auto;
+}
+@media(min-width:701px) and (max-width:900px){
+ .last-page-grid .ending-bubble{width:clamp(52px,8vw,76px)}
+}
+
+/* 作品が2点ある最終ページでは2作品＋つづくの3段に切り替え */
+.last-page-grid:has(> .work-tile:nth-child(2)){
+  grid-template-rows:repeat(2,minmax(0,1fr)) minmax(0,.85fr);
+}
+.last-page-grid > .work-tile:nth-child(n+2):not(:last-child){display:block;}
+
+
+/* v1.4: 最終左ページは『つづく』の大きな1コマのみ。 */
+.last-page-grid{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:0;overflow:hidden}
+.last-page-grid > .ending-panel{grid-column:1!important;grid-row:1!important;width:100%;height:100%;min-height:0}
+.last-page-grid .ending-illustration{object-fit:cover;background:#d8d8d3}
+.last-page-grid .ending-bubble{width:clamp(70px,11vw,130px);top:6%;right:6%;height:auto}
+/* ABOUT と CONTACT のトーンを同じ左下の配置に統一 */
+#about .info-heading h2::before{left:-3%;top:auto;bottom:0;width:67%;height:60%;-webkit-mask-image:linear-gradient(to right,#000 0%,transparent 100%);mask-image:linear-gradient(to right,#000 0%,transparent 100%)}
+@media(max-width:700px){#about .info-heading h2::before{width:65%;height:58%}}
+
+/* v1.5: つづくはページ全体ではなく、上側に置く小さめの独立したコマ */
+.last-page-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:minmax(0,1fr);
+  justify-items:start;
+  align-items:start;
+  overflow:hidden;
+}
+.last-page-grid > .ending-panel{
+  grid-column:1!important;
+  grid-row:1!important;
+  width:76%;
+  height:59%;
+  min-height:0;
+  align-self:start;
+  justify-self:start;
+}
+.last-page-grid .ending-illustration{object-fit:cover;object-position:center 37%;}
+.last-page-grid .ending-bubble{width:clamp(52px,7.5vw,90px);top:5%;right:5%;}
+@media(max-width:700px){
+ .mobile-ending .ending-panel{width:100%;height:100%;}
+ .mobile-ending .ending-bubble{width:clamp(74px,23vw,112px);}
+}
+
+/* v1.6: 「つづく」のコマは site-config.js の endingLayout から調整 */
+@media (min-width:701px) {
+  .last-page-grid { position:relative; display:block; overflow:hidden; }
+  .last-page-grid > .ending-panel {
+    position:absolute; grid-column:auto!important; grid-row:auto!important;
+    left:var(--ending-left,0%); top:var(--ending-top,0%);
+    width:var(--ending-width,76%); height:var(--ending-height,59%);
+    margin:0; align-self:auto; justify-self:auto;
+  }
+  .last-page-grid .ending-illustration { object-position:center var(--ending-image-y,37%); }
+  .last-page-grid .ending-bubble {
+    width:var(--ending-bubble-width,22%); height:auto;
+    top:var(--ending-bubble-top,5%); right:var(--ending-bubble-right,5%);
+  }
+}
+/* スマホは縦読み優先。ページ内の設定はPC版だけに適用する */
+
+/* v1.7: モバイルでは漫画の縦読みを優先し、作品ごとのコマ枠変更はPCのみに適用。 */
+@media(max-width:700px){
+  .comic-page .comic-panel{position:relative;width:100%;height:auto;}
+}
+
+
+/* v1.8: PC版のコマ内画像だけ拡大。枠は拡大せず、画像は枠で切り抜く。 */
+@media (min-width:701px) {
+  .work-tile img { transform:scale(var(--image-scale, 1)); transform-origin:center center; }
+  .work-tile:hover img { transform:scale(calc(var(--image-scale, 1) * 1.035)); }
+}
+
+#introduction {
+  white-space: pre-line;
+}
